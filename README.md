@@ -10,7 +10,7 @@ An ESPHome-based solution for monitoring and controlling photovoltaic inverters 
 
 - **Deye SG04LP3** (Low Voltage)
 - **Deye SG05LP3** (Low Voltage)
-- **Deye SG05LP1** (Low Voltage) <-- **IN PROGRESS**
+- **Deye SG05LP1** (Low Voltage) <-- **IN PROGRESSS**
 - **Deye SG01HP3** (High Voltage)
 - **Deye SG02HP3** (High Voltage)
 
