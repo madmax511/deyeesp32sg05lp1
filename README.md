@@ -7,6 +7,8 @@
 
 An ESPHome-based solution for monitoring and controlling photovoltaic inverters via Modbus RTU communication. This project provides comprehensive integration with Home Assistant, enabling real-time monitoring and control of solar power systems.
 
+Installation & Presentation: https://youtu.be/iJjsA_MzmnE [PL]
+
 ## 📋 Currently Supported Inverters
 
 - **Deye SG04LP3** (Low Voltage)
