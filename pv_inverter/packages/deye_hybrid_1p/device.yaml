@@ -1,176 +1,166 @@
-﻿# sensor:
-#   - platform: modbus_controller
-#     modbus_controller_id: ${modbus_controller_id}
-#     name: "Inverter Date Time Raw 1"
-#     id: inverter_datetime_raw1
-#     register_type: holding
-#     address: 62
-#     accuracy_decimals: 0
-#     value_type: U_WORD
-#     internal: true
+﻿sensor:
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "Inverter Date Time Raw 1"
+    id: inverter_datetime_raw1
+    register_type: holding
+    address: 22
+    accuracy_decimals: 0
+    value_type: U_WORD
+    internal: true
 
-#   - platform: modbus_controller
-#     modbus_controller_id: ${modbus_controller_id}
-#     name: "Inverter Date Time Raw 2"
-#     id: inverter_datetime_raw2
-#     register_type: holding
-#     address: 63
-#     accuracy_decimals: 0
-#     value_type: U_WORD
-#     internal: true
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "Inverter Date Time Raw 2"
+    id: inverter_datetime_raw2
+    register_type: holding
+    address: 23
+    accuracy_decimals: 0
+    value_type: U_WORD
+    internal: true
 
-#   - platform: modbus_controller
-#     modbus_controller_id: ${modbus_controller_id}
-#     name: "Inverter Date Time Raw 3"
-#     id: inverter_datetime_raw3
-#     register_type: holding
-#     address: 64
-#     accuracy_decimals: 0
-#     value_type: U_WORD
-#     internal: true
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "Inverter Date Time Raw 3"
+    id: inverter_datetime_raw3
+    register_type: holding
+    address: 24
+    accuracy_decimals: 0
+    value_type: U_WORD
+    internal: true
 
-#   - platform: modbus_controller
-#     modbus_controller_id: ${modbus_controller_id}
-#     name: "Device Control Board Firmware Raw 11"
-#     id: device_firmware_raw_11
-#     register_type: holding
-#     address: 11
-#     accuracy_decimals: 0
-#     value_type: U_WORD
-#     internal: true
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "Device Control Board Firmware Raw 11"      
+    id: device_firmware_raw_11
+    register_type: holding
+    address: 11
+    accuracy_decimals: 0
+    value_type: U_WORD
+    internal: true
 
-#   - platform: modbus_controller
-#     modbus_controller_id: ${modbus_controller_id}
-#     name: "Device Control Board Firmware Raw 14"
-#     id: device_firmware_raw_14
-#     register_type: holding
-#     address: 14
-#     accuracy_decimals: 0
-#     value_type: U_WORD
-#     internal: true
+  - platform: modbus_controller     
+    modbus_controller_id: ${modbus_controller_id}
+    name: "Device Control Board Firmware Raw 12" 
+    id: device_firmware_raw_14
+    register_type: holding
+    address: 12
+    accuracy_decimals: 0
+    value_type: U_WORD
+    internal: true
 
-#   - platform: modbus_controller
-#     modbus_controller_id: ${modbus_controller_id}
-#     name: "Device Control Board Firmware Raw 15"
-#     id: device_firmware_raw_15
-#     register_type: holding
-#     address: 15
-#     accuracy_decimals: 0
-#     value_type: U_WORD
-#     internal: true
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "Device Control Board Firmware Raw 13"
+    id: device_firmware_raw_15
+    register_type: holding
+    address: 13
+    accuracy_decimals: 0
+    value_type: U_WORD
+    internal: true
 
-#   - platform: modbus_controller
-#     modbus_controller_id: ${modbus_controller_id}
-#     name: "Device Communication Board Firmware Raw 16"
-#     id: device_comm_firmware_raw_16
-#     register_type: holding
-#     address: 16
-#     accuracy_decimals: 0
-#     value_type: U_WORD
-#     internal: true
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "Device Communication Board Firmware Raw 10"
+    id: device_comm_firmware_raw_16
+    register_type: holding
+    address: 10
+    accuracy_decimals: 0
+    value_type: U_WORD
+    internal: true
 
-#   - platform: modbus_controller
-#     modbus_controller_id: ${modbus_controller_id}
-#     name: "Device Communication Board Firmware Raw 17"
-#     id: device_comm_firmware_raw_17
-#     register_type: holding
-#     address: 17
-#     accuracy_decimals: 0
-#     value_type: U_WORD
-#     internal: true
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "Device Communication Board Firmware Raw 14"
+    id: device_comm_firmware_raw_17
+    register_type: holding
+    address: 14
+    accuracy_decimals: 0
+    value_type: U_WORD
+    internal: true
 
-#   - platform: modbus_controller
-#     modbus_controller_id: ${modbus_controller_id}
-#     name: "Device Communication Board Firmware Raw 18"
-#     id: device_comm_firmware_raw_18
-#     register_type: holding
-#     address: 18
-#     accuracy_decimals: 0
-#     value_type: U_WORD
-#     internal: true
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "Device Modbus Address"
+    register_type: holding
+    address: 1
+    unit_of_measurement: ""
+    accuracy_decimals: 0
+    value_type: U_WORD
+    icon: "mdi:identifier"
+    entity_category: diagnostic
 
-#   - platform: modbus_controller
-#     modbus_controller_id: ${modbus_controller_id}
-#     name: "Device Modbus Address"
-#     register_type: holding
-#     address: 1
-#     unit_of_measurement: ""
-#     accuracy_decimals: 0
-#     value_type: U_WORD
-#     icon: "mdi:identifier"
-#     entity_category: diagnostic
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "Device Rated Power"
+    id: device_rated_power_raw
+    register_type: holding
+    address: 16
+    # address: 17
+    unit_of_measurement: "W"
+    device_class: power
+    accuracy_decimals: 0
+    entity_category: diagnostic
+    filters:
+      - multiply: 0.1
+    value_type: U_DWORD_R
+    icon: "mdi:flash"
 
-#   - platform: modbus_controller
-#     modbus_controller_id: ${modbus_controller_id}
-#     name: "Device Rated Power"
-#     id: device_rated_power_raw
-#     register_type: holding
-#     address: 20
-#     unit_of_measurement: "W"
-#     device_class: power
-#     accuracy_decimals: 0
-#     entity_category: diagnostic
-#     filters:
-#       - multiply: 0.1
-#     value_type: U_DWORD_R
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "Device MPPTs"
+    register_type: holding
+    address: 18
+    unit_of_measurement: ""
+    accuracy_decimals: 0
+    value_type: U_WORD
+    icon: "mdi:solar-panel"
 
-#     icon: "mdi:flash"
+    entity_category: diagnostic
+    filters:
+      - lambda: |-
+          uint16_t value = (uint16_t)x;
+          // Extract upper nibble (bits 8-11) and shift right 8 bits
+          uint16_t mppts = (value >> 8) & 0x0F;
+          // Validation: if value exceeds 12 MPPTs, use default of 2
+          if (mppts < 1 || mppts > 12) {
+            return 2.0;
+          }
+          return (float)mppts;
 
-#   - platform: modbus_controller
-#     modbus_controller_id: ${modbus_controller_id}
-#     name: "Device MPPTs"
-#     register_type: holding
-#     address: 22
-#     unit_of_measurement: ""
-#     accuracy_decimals: 0
-#     value_type: U_WORD
-#     icon: "mdi:solar-panel"
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "Device Phases"
+    register_type: holding
+    address: 18
+    unit_of_measurement: ""
+    accuracy_decimals: 0
+    value_type: U_WORD
+    icon: "mdi:transmission-tower"
 
-#     entity_category: diagnostic
-#     filters:
-#       - lambda: |-
-#           uint16_t value = (uint16_t)x;
-#           // Extract upper nibble (bits 8-11) and shift right 8 bits
-#           uint16_t mppts = (value >> 8) & 0x0F;
-#           // Validation: if value exceeds 12 MPPTs, use default of 2
-#           if (mppts < 1 || mppts > 12) {
-#             return 2.0;
-#           }
-#           return (float)mppts;
+    entity_category: diagnostic
+    filters:
+      - lambda: |-
+          uint16_t value = (uint16_t)x;
+          // Extract lower nibble (bits 0-3)
+          uint16_t phases = value & 0x0F;
+          // Validation: if value exceeds 3 phases, use default of 3
+          if (phases < 1 || phases > 3) {
+            return 3.0;
+          }
+          return (float)phases;
 
-#   - platform: modbus_controller
-#     modbus_controller_id: ${modbus_controller_id}
-#     name: "Device Phases"
-#     register_type: holding
-#     address: 22
-#     unit_of_measurement: ""
-#     accuracy_decimals: 0
-#     value_type: U_WORD
-#     icon: "mdi:transmission-tower"
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "Communications Board Failure Status"
+    register_type: holding
+    address: 59
+    accuracy_decimals: 0
+    value_type: U_WORD
+    icon: "mdi:alert-circle"
+    entity_category: diagnostic
 
-#     entity_category: diagnostic
-#     filters:
-#       - lambda: |-
-#           uint16_t value = (uint16_t)x;
-#           // Extract lower nibble (bits 0-3)
-#           uint16_t phases = value & 0x0F;
-#           // Validation: if value exceeds 3 phases, use default of 3
-#           if (phases < 1 || phases > 3) {
-#             return 3.0;
-#           }
-#           return (float)phases;
-
-#   - platform: modbus_controller
-#     modbus_controller_id: ${modbus_controller_id}
-#     name: "Communications Board Failure Status"
-#     register_type: holding
-#     address: 548
-#     accuracy_decimals: 0
-#     value_type: U_WORD
-#     icon: "mdi:alert-circle"
-#     entity_category: diagnostic
-
-# binary_sensor:
+binary_sensor:
 #   - platform: modbus_controller
 #     modbus_controller_id: ${modbus_controller_id}
 #     name: "Communications Board Flash Chip Error"
@@ -210,19 +200,19 @@
 #     device_class: running
 #     icon: "mdi:power"
 
-# switch:
-#   - platform: modbus_controller
-#     use_write_multiple: true
-#     modbus_controller_id: ${modbus_controller_id}
-#     name: "Power Switch"
-#     id: switch_power
-#     register_type: holding
-#     address: 80
-#     bitmask: 1
-#     entity_category: config
-#     icon: "mdi:toggle-switch"
+switch:
+  - platform: modbus_controller
+    use_write_multiple: true
+    modbus_controller_id: ${modbus_controller_id}
+    name: "Power Switch"
+    id: switch_power
+    register_type: holding
+    address: 43
+    bitmask: 1
+    entity_category: config
+    icon: "mdi:toggle-switch"
 
-# text_sensor:
+text_sensor:
 #   - platform: modbus_controller
 #     modbus_controller_id: ${modbus_controller_id}
 #     bitmask: 0
