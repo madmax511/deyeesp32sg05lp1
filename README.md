@@ -1,6 +1,7 @@
 # ESPHome PV Inverter
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2025?style=for-the-badge)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/lewa-reka/esphome-pv-inverter/build-ci.yaml?style=for-the-badge)
 ![GitHub License](https://img.shields.io/github/license/lewa-reka/esphome-pv-inverter?style=for-the-badge)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/lewa-reka/esphome-pv-inverter?style=for-the-badge)
 
