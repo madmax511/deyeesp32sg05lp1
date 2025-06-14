@@ -522,29 +522,29 @@ number:
     entity_category: config
     icon: "mdi:battery"
 
-#   - platform: modbus_controller
-#     use_write_multiple: true
-#     modbus_controller_id: ${modbus_controller_id}
-#     id: maximum_battery_charge_current
-#     name: "Maximum Battery Charge Current"
-#     address: 108
-#     unit_of_measurement: A
-#     device_class: current
-#     entity_category: config
-#     value_type: U_WORD
-#     icon: "mdi:battery-charging"
+  - platform: modbus_controller
+    use_write_multiple: true
+    modbus_controller_id: ${modbus_controller_id}
+    id: maximum_battery_charge_current
+    name: "Maximum Battery Charge Current"
+    address: 210
+    unit_of_measurement: A
+    device_class: current
+    entity_category: config
+    value_type: U_WORD
+    icon: "mdi:battery-charging"
 
-#   - platform: modbus_controller
-#     use_write_multiple: true
-#     modbus_controller_id: ${modbus_controller_id}
-#     id: maximum_battery_discharge_current
-#     name: "Maximum Battery Discharge Current"
-#     address: 109
-#     unit_of_measurement: A
-#     device_class: current
-#     entity_category: config
-#     value_type: U_WORD
-#     icon: "mdi:battery-charging-10"
+  - platform: modbus_controller
+    use_write_multiple: true
+    modbus_controller_id: ${modbus_controller_id}
+    id: maximum_battery_discharge_current
+    name: "Maximum Battery Discharge Current"
+    address: 211
+    unit_of_measurement: A
+    device_class: current
+    entity_category: config
+    value_type: U_WORD
+    icon: "mdi:battery-charging-10"
 
   - platform: modbus_controller
     use_write_multiple: true
