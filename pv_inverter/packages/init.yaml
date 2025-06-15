@@ -1,7 +1,7 @@
 ﻿esphome:
   name: "${name}"
   friendly_name: "${friendly_name}"
-  comment: "${device_description} by Lewa-Reka & HarveyDent https://github.com/HarveyDent1/esphome-pv-inverter-1p"
+  comment: "${device_description} by Lewa-Reka & HarveyDent https://github.com/HarveyDent1/esphome-pv-inverter-1-3p" 
   project:
     name: "lewa-reka-harvey-dent.esphome-pv-inverter"
     version: "0.2.2"
