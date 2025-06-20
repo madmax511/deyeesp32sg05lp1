@@ -64,3 +64,33 @@ number:
   - id: !extend time_of_use_6_out_power
     multiply: 0.1
     step: 10
+  - id: !extend battery_shutdown_voltage
+    multiply: 10
+    step: 0.1
+    min_value: 150
+    max_value: 710
+  - id: !extend battery_restart_voltage
+    multiply: 10
+    step: 0.1
+    min_value: 150
+    max_value: 710
+  - id: !extend battery_low_voltage
+    multiply: 0.1
+    step: 0.1
+    min_value: 150
+    max_value: 710
+  - id: !extend battery_equalization_voltage
+    multiply: 0.1
+    step: 0.1
+    min_value: 150
+    max_value: 710
+  - id: !extend battery_absorption_voltage
+    multiply: 0.1
+    step: 0.1
+    min_value: 150
+    max_value: 710
+  - id: !extend battery_float_voltage
+    multiply: 0.1
+    step: 0.1
+    min_value: 150
+    max_value: 710
