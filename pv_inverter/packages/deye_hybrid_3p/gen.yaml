@@ -186,6 +186,7 @@ number:
     use_write_multiple: true
     modbus_controller_id: ${modbus_controller_id}
     name: "SmartLoad Off Voltage"
+    id: smartload_off_voltage
     address: 134
     unit_of_measurement: "V"
     device_class: voltage
@@ -214,6 +215,7 @@ number:
     use_write_multiple: true
     modbus_controller_id: ${modbus_controller_id}
     name: "SmartLoad On Voltage"
+    id: smartload_on_voltage
     address: 136
     unit_of_measurement: "V"
     device_class: voltage

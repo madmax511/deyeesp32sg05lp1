@@ -432,6 +432,7 @@ number:
     use_write_multiple: true
     modbus_controller_id: ${modbus_controller_id}
     name: "Battery Generator Charging Start Voltage"
+    id: battery_generator_charging_start_voltage
     address: 123
     unit_of_measurement: "V"
     device_class: voltage
@@ -474,6 +475,7 @@ number:
     use_write_multiple: true
     modbus_controller_id: ${modbus_controller_id}
     name: "Battery Grid Charging Start Voltage"
+    id: battery_grid_charging_start_voltage
     address: 126
     unit_of_measurement: "V"
     device_class: voltage
@@ -719,6 +721,7 @@ number:
     use_write_multiple: true
     modbus_controller_id: ${modbus_controller_id}
     name: "Battery Empty Voltage"
+    id: battery_empty_voltage
     address: 103
     unit_of_measurement: "V"
     device_class: voltage
