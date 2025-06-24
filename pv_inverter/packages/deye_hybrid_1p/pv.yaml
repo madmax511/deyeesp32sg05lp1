@@ -48,7 +48,7 @@
       - multiply: 0.1
     value_type: U_WORD
     icon: "mdi:solar-power-variant"
-
+    
   - platform: template
     name: "PV Power"
     unit_of_measurement: "W"
