@@ -50,7 +50,6 @@ sensor:
     address: 196
     unit_of_measurement: "Hz"
     device_class: frequency
-
     accuracy_decimals: 0
     value_type: S_WORD
     icon: "mdi:engine"
