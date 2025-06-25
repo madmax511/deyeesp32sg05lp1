@@ -27,23 +27,26 @@ Installation & Presentation: https://youtu.be/iJjsA_MzmnE [PL]
 
 ## 📋 Currently Supported Inverters
 
-- **Deye SG0XLP1** (Low Voltage)
-- **Deye SG04LP3** (Low Voltage)
-- **Deye SG05LP3** (Low Voltage)
-- **Deye SG01HP3** (High Voltage)
-- **Deye SG02HP3** (High Voltage)
+- **Deye SG0XLP1** *(Single Phase Low Voltage)*
+   
+  ***Single Phase Recommended baud rate: 9600 (default, nothing to change)***
+
+- **Deye SG04LP3** *(Low Voltage)*
+- **Deye SG05LP3** *(Low Voltage)*
+- **Deye SG01HP3** *(High Voltage)*
+- **Deye SG02HP3** *(High Voltage)*
+   
+  ***3 Phases Recommended baud rate: 19200***
 
 #### Deye Inverter Configuration
 
-**Recommended baud rate: 19200 for 3P and 9600 for 1P**
-
-To set the baud rate on your Deye 3P inverter:
+To set the baud rate on your Deye inverter:
 1. Navigate to: **Advanced Settings** → **Paral. Set 3** → **Boud Rate**
 2. Set the value to **19200**
 3. Save the settings
 
 
-**Note**: After saving, the screen will turn off and a red LED alarm will flash - this is normal behavior. Everything should return to normal after a moment. Change the Boud Rate in menu for inverter 1P is unavailable.
+**Note**: After saving, the screen will turn off and a red LED alarm will flash - this is normal behavior. Everything should return to normal after a moment.
 
 ## 🚀 Features
 
@@ -166,6 +169,7 @@ If you prefer using command line or don't have Home Assistant:
 | `device_description` | Device description | depends on inverter type | No |
 | `modbus_controller_id` | Modbus controller ID | depends on inverter type | No |
 | `modbus_inverter_address` | Modbus address of your inverter | `0x01` | No |
+| `baud_rate` | Baud rate for Modbus communication | depends on inverter type | No |
 
 ### Inverter Configuration
 
@@ -180,7 +184,7 @@ If you prefer using command line or don't have Home Assistant:
 ### Default Hardware Configuration
 
 - **UART Pins**: GPIO17 (TX), GPIO16 (RX)
-- **Baud Rate**: 19200
+- **Baud Rate**: 9600 or 19200 depends on inverter type
 - **Board**: ESP32-DevKit v1 (configurable)
 - **Flow Control**: Optional GPIO4 (uncomment if needed)
 

@@ -18,7 +18,7 @@ esphome:
   comment: "${device_description} by Lewa-Reka https://github.com/Lewa-Reka/esphome-pv-inverter"
   project:
     name: "lewa-reka.esphome-pv-inverter"
-    version: "0.3.5"
+    version: "0.3.0"
 
 logger:
   level: WARN
@@ -54,7 +54,7 @@ captive_portal:
 
 uart:
   id: modbus_uart
-  baud_rate: 19200 # 9600 for 1P / 19200 for 3P
+  baud_rate: ${baud_rate}
   stop_bits: 1
 
 modbus:
