@@ -169,6 +169,7 @@ If you prefer using command line or don't have Home Assistant:
 | `device_description` | Device description | depends on inverter type | No |
 | `modbus_controller_id` | Modbus controller ID | depends on inverter type | No |
 | `modbus_inverter_address` | Modbus address of your inverter | `0x01` | No |
+| `baud_rate` | Baud rate for Modbus communication | depends on inverter type | No |
 
 ### Inverter Configuration
 
@@ -183,7 +184,7 @@ If you prefer using command line or don't have Home Assistant:
 ### Default Hardware Configuration
 
 - **UART Pins**: GPIO17 (TX), GPIO16 (RX)
-- **Baud Rate**: 19200
+- **Baud Rate**: 9600 or 19200 depends on inverter type
 - **Board**: ESP32-DevKit v1 (configurable)
 - **Flow Control**: Optional GPIO4 (uncomment if needed)
 
