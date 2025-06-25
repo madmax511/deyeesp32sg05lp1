@@ -29,14 +29,14 @@ Installation & Presentation: https://youtu.be/iJjsA_MzmnE [PL]
 
 - **Deye SG0XLP1** *(Single Phase Low Voltage)*
    
-  ***Recommended baud rate: 9600 (default, nothing to change)***
+  ***Single Phase Recommended baud rate: 9600 (default, nothing to change)***
 
 - **Deye SG04LP3** *(Low Voltage)*
 - **Deye SG05LP3** *(Low Voltage)*
 - **Deye SG01HP3** *(High Voltage)*
 - **Deye SG02HP3** *(High Voltage)*
    
-  ***Recommended baud rate: 19200***
+  ***3 Phases Recommended baud rate: 19200***
 
 #### Deye Inverter Configuration
 
