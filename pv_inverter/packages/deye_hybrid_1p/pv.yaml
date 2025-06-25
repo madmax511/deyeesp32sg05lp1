@@ -23,6 +23,32 @@
     value_type: U_WORD
     icon: "mdi:solar-power-variant"
 
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "PV3 Power"
+    id: pv3_power
+    register_type: holding
+    address: 188
+    unit_of_measurement: "W"
+    device_class: power
+    accuracy_decimals: 0
+    value_type: U_WORD
+    icon: "mdi:solar-power-variant"
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "PV4 Power"
+    id: pv4_power
+    register_type: holding
+    address: 189
+    unit_of_measurement: "V"
+    device_class: voltage
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+    value_type: U_WORD
+    icon: "mdi:solar-power-variant"
+
   - platform: template
     name: "PV Power"
     unit_of_measurement: "W"
@@ -34,13 +60,15 @@
     lambda: |-
       float pv1 = isnan(id(pv1_power).state) ? 0.0 : id(pv1_power).state;
       float pv2 = isnan(id(pv2_power).state) ? 0.0 : id(pv2_power).state;
-      return pv1 + pv2;
+      float pv3 = isnan(id(pv3_power).state) ? 0.0 : id(pv3_power).state;
+      float pv4 = isnan(id(pv4_power).state) ? 0.0 : id(pv4_power).state;
+      return pv1 + pv2 + pv3 +pv4;
 
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
     name: "PV1 Voltage"
     register_type: holding
-    address: 189
+    address: 109
     unit_of_measurement: "V"
     device_class: voltage
     accuracy_decimals: 1
@@ -80,6 +108,58 @@
     name: "PV2 Current"
     register_type: holding
     address: 112
+    unit_of_measurement: "A"
+    device_class: current
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+    value_type: U_WORD
+    icon: "mdi:solar-power-variant"
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "PV3 Voltage"
+    register_type: holding
+    address: 113
+    unit_of_measurement: "V"
+    device_class: voltage
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+    value_type: U_WORD
+    icon: "mdi:solar-power-variant"
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "PV3 Current"
+    register_type: holding
+    address: 114
+    unit_of_measurement: "A"
+    device_class: current
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+    value_type: U_WORD
+    icon: "mdi:solar-power-variant"
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "PV4 Voltage"
+    register_type: holding
+    address: 115
+    unit_of_measurement: "V"
+    device_class: voltage
+    accuracy_decimals: 1
+    filters:
+      - multiply: 0.1
+    value_type: U_WORD
+    icon: "mdi:solar-power-variant"
+
+  - platform: modbus_controller
+    modbus_controller_id: ${modbus_controller_id}
+    name: "PV4 Current"
+    register_type: holding
+    address: 116
     unit_of_measurement: "A"
     device_class: current
     accuracy_decimals: 1
