@@ -27,23 +27,26 @@ Installation & Presentation: https://youtu.be/iJjsA_MzmnE [PL]
 
 ## 📋 Currently Supported Inverters
 
-- **Deye SG0XLP1** (Low Voltage)
-- **Deye SG04LP3** (Low Voltage)
-- **Deye SG05LP3** (Low Voltage)
-- **Deye SG01HP3** (High Voltage)
-- **Deye SG02HP3** (High Voltage)
+- **Deye SG0XLP1** *(Single Phase Low Voltage)*
+   
+  ***Recommended baud rate: 9600 (default, nothing to change)***
+
+- **Deye SG04LP3** *(Low Voltage)*
+- **Deye SG05LP3** *(Low Voltage)*
+- **Deye SG01HP3** *(High Voltage)*
+- **Deye SG02HP3** *(High Voltage)*
+   
+  ***Recommended baud rate: 19200***
 
 #### Deye Inverter Configuration
 
-**Recommended baud rate: 19200 for 3P and 9600 for 1P**
-
-To set the baud rate on your Deye 3P inverter:
+To set the baud rate on your Deye inverter:
 1. Navigate to: **Advanced Settings** → **Paral. Set 3** → **Boud Rate**
 2. Set the value to **19200**
 3. Save the settings
 
 
-**Note**: After saving, the screen will turn off and a red LED alarm will flash - this is normal behavior. Everything should return to normal after a moment. Change the Boud Rate in menu for inverter 1P is unavailable.
+**Note**: After saving, the screen will turn off and a red LED alarm will flash - this is normal behavior. Everything should return to normal after a moment.
 
 ## 🚀 Features
 
