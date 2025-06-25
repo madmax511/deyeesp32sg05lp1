@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+substitutions:
+  update_interval: 5s
+
 esphome:
   name: "${name}"
   friendly_name: "${friendly_name}"
@@ -66,6 +69,6 @@ modbus_controller:
     address: ${modbus_inverter_address}
     modbus_id: modbus_1
     setup_priority: -10
-    update_interval: 5s
+    update_interval: ${update_interval}
     command_throttle: 60ms
     offline_skip_updates: 3

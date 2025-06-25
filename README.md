@@ -170,6 +170,7 @@ If you prefer using command line or don't have Home Assistant:
 | `modbus_controller_id` | Modbus controller ID | depends on inverter type | No |
 | `modbus_inverter_address` | Modbus address of your inverter | `0x01` | No |
 | `baud_rate` | Baud rate for Modbus communication | depends on inverter type | No |
+| `update_interval` | How often sensor values are updated from inverter | 5s | No |
 
 ### Inverter Configuration
 
