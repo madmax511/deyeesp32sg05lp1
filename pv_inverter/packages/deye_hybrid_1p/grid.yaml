@@ -276,7 +276,7 @@ number:
     modbus_controller_id: ${modbus_controller_id}
     id: grid_voltage_protection_high
     name: "Grid voltage protection - high"
-    unit_of_measurement: "Hz"
+    unit_of_measurement: "V"
     device_class: voltage
     entity_category: config
     register_type: holding
@@ -292,7 +292,7 @@ number:
     modbus_controller_id: ${modbus_controller_id}
     id: grid_voltage_protection_low
     name: "Grid voltage protection - low"
-    unit_of_measurement: "Hz"
+    unit_of_measurement: "V"
     device_class: voltage
     entity_category: config
     register_type: holding
