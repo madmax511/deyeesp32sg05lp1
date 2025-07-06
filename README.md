@@ -25,6 +25,12 @@ An ESPHome-based solution for monitoring and controlling photovoltaic inverters 
 
 Installation & Presentation: https://youtu.be/iJjsA_MzmnE [PL]
 
+## ⚠️ Breaking Changes
+
+### Version 0.4.0
+- **Default Baud Rate Change for Deye SGXLP3 Inverters**: The default baud rate has been changed from **19200** to **9600** for better compatibility and stability.
+- **Action Required**: If you're upgrading from a previous version and have a Deye SGXLP3 inverter configured with baud rate 19200, you **must** change it to 9600 before updating.
+
 ## 📋 Currently Supported Inverters
 
 - **Deye SG0XLP1** *(Single Phase Low Voltage)*
@@ -36,13 +42,13 @@ Installation & Presentation: https://youtu.be/iJjsA_MzmnE [PL]
 - **Deye SG01HP3** *(High Voltage)*
 - **Deye SG02HP3** *(High Voltage)*
    
-  ***3 Phases Recommended baud rate: 19200***
+  ***3 Phases Recommended baud rate: 9600 (default, nothing to change)***
 
 #### Deye Inverter Configuration
 
 To set the baud rate on your Deye inverter:
 1. Navigate to: **Advanced Settings** → **Paral. Set 3** → **Boud Rate**
-2. Set the value to **19200**
+2. Set the value to **9600**
 3. Save the settings
 
 
@@ -169,7 +175,7 @@ If you prefer using command line or don't have Home Assistant:
 | `device_description` | Device description | depends on inverter type | No |
 | `modbus_controller_id` | Modbus controller ID | depends on inverter type | No |
 | `modbus_inverter_address` | Modbus address of your inverter | `0x01` | No |
-| `baud_rate` | Baud rate for Modbus communication | depends on inverter type | No |
+| `baud_rate` | Baud rate for Modbus communication | `9600` | No |
 | `update_interval` | How often sensor values are updated from inverter | 5s | No |
 
 ### Inverter Configuration
@@ -185,7 +191,7 @@ If you prefer using command line or don't have Home Assistant:
 ### Default Hardware Configuration
 
 - **UART Pins**: GPIO17 (TX), GPIO16 (RX)
-- **Baud Rate**: 9600 or 19200 depends on inverter type
+- **Baud Rate**: 9600
 - **Board**: ESP32-DevKit v1 (configurable)
 - **Flow Control**: Optional GPIO4 (uncomment if needed)
 
