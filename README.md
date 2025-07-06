@@ -28,8 +28,8 @@ Installation & Presentation: https://youtu.be/iJjsA_MzmnE [PL]
 ## ⚠️ Breaking Changes
 
 ### Version 0.4.0
-- **Default Baud Rate Change for Deye SGXLP3 Inverters**: The default baud rate has been changed from **19200** to **9600** for better compatibility and stability.
-- **Action Required**: If you're upgrading from a previous version and have a Deye SGXLP3 inverter configured with baud rate 19200, you **must** change it to 9600 before updating.
+- **Default Baud Rate Change for Deye SG0XLP3 and SG0XHP3 Inverters**: The default baud rate has been changed from **19200** to **9600** for better compatibility and stability.
+- **Action Required**: If you're upgrading from a previous version and have a inverter configured with baud rate 19200, you **must** change it to 9600 before updating.
 
 ## 📋 Currently Supported Inverters
 
