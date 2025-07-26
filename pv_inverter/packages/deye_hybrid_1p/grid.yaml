@@ -256,7 +256,7 @@ switch:
     id: switch_off_grid
     register_type: holding
     address: 179
-    bitmask: 1
+    bitmask: 3
     entity_category: config
     icon: "mdi:transmission-tower-off"
 
