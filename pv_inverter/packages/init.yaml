@@ -18,9 +18,9 @@ substitutions:
 esphome:
   name: "${name}"
   friendly_name: "${friendly_name}"
-  comment: "${device_description} by Lewa-Reka https://github.com/Lewa-Reka/esphome-pv-inverter"
+  comment: "${device_description} by madmax511 https://github.com/madmax511/deyeesp32sg05lp1"
   project:
-    name: "lewa-reka.esphome-pv-inverter"
+    name: "deyeesp32sg05lp1"
     version: "0.4.3"
 
 logger:
