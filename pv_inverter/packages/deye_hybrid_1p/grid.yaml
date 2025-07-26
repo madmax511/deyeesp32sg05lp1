@@ -280,8 +280,9 @@ number:
     device_class: voltage
     entity_category: config
     register_type: holding
-    min_value: 1000
-    max_value: 2870
+    multiply: 10
+    min_value: 100
+    max_value: 287
     step: 1
     address: 287
     value_type: U_WORD
