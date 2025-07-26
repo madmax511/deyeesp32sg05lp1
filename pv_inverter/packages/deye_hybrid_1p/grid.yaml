@@ -255,8 +255,8 @@ switch:
     name: "Force Off Grid"
     id: switch_off_grid
     register_type: holding
-    address: 179
-    bitmask: 3
+    address: 281
+    bitmask: 1
     entity_category: config
     icon: "mdi:transmission-tower-off"
 
@@ -280,8 +280,8 @@ number:
     device_class: voltage
     entity_category: config
     register_type: holding
-    min_value: 100
-    max_value: 287
+    min_value: 1000
+    max_value: 2870
     step: 1
     address: 287
     value_type: U_WORD
