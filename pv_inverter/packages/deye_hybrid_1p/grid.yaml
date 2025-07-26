@@ -252,7 +252,7 @@ switch:
   - platform: modbus_controller
     use_write_multiple: true
     modbus_controller_id: ${modbus_controller_id}
-    name: "Force Off Grid"
+    name: "Force Off Grid test"
     id: switch_off_grid
     register_type: holding
     address: 281
@@ -282,7 +282,7 @@ number:
     register_type: holding
     multiply: 10
     min_value: 100
-    max_value: 287
+    max_value: 280
     step: 1
     address: 287
     value_type: U_WORD
